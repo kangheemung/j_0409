@@ -11,18 +11,8 @@ reader.on('line', (line) => {
   lines.push(line);
 });
 reader.on('close', () => {
-const addStrings = (S, T) => {
-    const num1 = parseInt(S);
-    const num2 = parseInt(T);
-    const sum = num1 + num2;
-    return sum.toString();
+const N=parseInt(lines[0],10);
+for(let i=1; i <= N; i++){
+    console.log(i)
 }
-// lines 配列から入力値を取得
-const C = lines[0];
-const T = lines[1];
-
-// 結果を出力
-console.log(addStrings(C, T));
-  
-  
 });
