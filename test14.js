@@ -11,8 +11,16 @@ reader.on('line', (line) => {
   lines.push(line);
 });
 reader.on('close', () => {
-const A=parseInt(lines[0],10);
-const B=parseInt(lines[1],10);
-const result = !(A | B);
-console.log(result ? 1 : 0);
+const n = parseInt(lines[0]);
+  const a = [];
+
+  for (let i = 1; i <= n; i++) {
+    a.push(parseInt(lines[i]));
+  }
+
+  a.reverse();
+
+  a.forEach((i) => {
+    console.log(i);
+  });
 });
