@@ -118,6 +118,10 @@ console.log(isCatPresent);
 let animal = "Red deer";
 let updatedAnimal = animal.replace("Red deer", "Deer");
 
+let taget=animals.indexOf("Tiger")
+animals.splice(taget+1);
+console.log(animals);
+
 console.log(updatedAnimal);
 // "Spider"부터 3개의 아이템을 기존 어레이에서 제거하시오
 let indexToRemove = animals.indexOf("Spider");
